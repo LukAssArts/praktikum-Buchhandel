@@ -44,7 +44,8 @@
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
 							'.$books[$i]['price'].'&euro;<br>
-							noch &uuml;brig: '.$books[$i]['stock'].'</p></td>
+							noch &uuml;brig: '.$books[$i]['stock'].'<br>
+							<a href="detail.php?id='.$i.'"details></a></p></td>
 							<td> <input name="amount'.$i.'" type="number"><br>
 							<input name="submit'.$i.'" type="submit" value="In den Warenkorb"></td></tr>';
 				}
@@ -66,7 +67,8 @@
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
 							'.$books[$i]['price'].'&euro;<br>
-							noch &uuml;brig: '.$books[$i]['stock'].'</p></td>
+							noch &uuml;brig: '.$books[$i]['stock'].'<br>
+							<a href="detail.php?id='.$i.'"details></a></p></td>
 							<td> <input name="amount'.$i.'" type="number"><br>
 							<input name="submit'.$i.'" type="submit" value="In den Warenkorb"></td></tr>';
 				}
@@ -88,7 +90,8 @@
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
 							'.$books[$i]['price'].'&euro;<br>
-							noch &uuml;brig: '.$books[$i]['stock'].'</p></td>
+							noch &uuml;brig: '.$books[$i]['stock'].'<br>
+							<a href="detail.php?id='.$i.'"details></a></p></td>
 							<td> <input name="amount'.$i.'" type="number"><br>
 							<input name="submit'.$i.'" type="submit" value="In den Warenkorb"></td></tr>';
 				}
