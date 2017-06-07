@@ -1,4 +1,4 @@
-<?php
+<?php 
 $books = array(
 	0 => array('name' => "Heimvorteil", 
 						'url' => "images/heimvorteil.jpg", 
