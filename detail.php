@@ -18,11 +18,11 @@
 			include 'bookDB.php';
 			$id=$_GET['id'];
 			echo '<img src="'.$books[$id]['url'].'" class="bookCoversDetail">
-							<h2>'.$books[$id]['name'].'</h2><br>
+							<h2>'.$books[$id]['name'].'</h2>
 							<p>von: '.$books[$id]['author'].'<br>
-							'.$books[$id]['price'].'&euro;<br>
+							Preis: '.$books[$id]['price'].'&euro;<br>
 							noch &uuml;brig: '.$books[$id]['stock'].'<br>
-							Buchr&uuml;ckentext: '.$books[$id]['details'].'</p>';
+							<u>Buchr&uuml;ckentext:</u><br>'.$books[$id]['details'].'</p>';
 		?>
 	</div>
 </body>
