@@ -1,5 +1,10 @@
 ## Praktikum - Buchhandelwebshop
 
 #TODO's:
-- javascript Teil
-- php Teil
+- Javascript:
+  Warenkorb und Preisberechnen
+  Eingaben validieren
+  
+- PHP:
+  Bestellfunktion/Kontaktfunktion 
+  Daten auf Server speichern
