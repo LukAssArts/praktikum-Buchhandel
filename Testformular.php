@@ -7,8 +7,8 @@
 <body>
 <?php
 
-$nameErr = $emailErr = $adrErr "";
-$name = $email = $adresse "";
+$nameErr = $emailErr = $adrErr = "";
+$name = $email = $adresse = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
