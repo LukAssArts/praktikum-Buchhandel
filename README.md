@@ -2,9 +2,10 @@
 
 #TODO's:
 - Javascript:
-  Warenkorb und Preisberechnen
-  Eingaben validieren
+  -Warenkorb und Preisberechnen
+  -Warenkorb erst mit Inhalt anzeigen
+  -Eingaben validieren
   
 - PHP:
-  Bestellfunktion/Kontaktfunktion 
-  Daten auf Server speichern
+  -Bestellfunktion/Kontaktfunktion 
+  -Daten auf Server speichern
