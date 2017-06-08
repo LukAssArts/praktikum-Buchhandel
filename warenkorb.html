@@ -1,47 +1,25 @@
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-<head>
-	<title>unbenannt</title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<meta name="generator" content="Geany 1.23.1" />
-</head>
-
+<html>
 <body>
-	
-	<form id="shopping-cart" action="cart.html" method="post">
-	<table class="shopping-cart">
-		<thead>
-			<tr>
-				<th scope="col">Bücher</th>
-				<th scope="col">Anzahl</th>
-				<th scope="col">Preis</th>
-			</tr>
-		</thead>
-		<tbody></tbody>
-	</table>
-	<p id="sub-total">
-		<strong>Sub Total</strong>: <span id="stotal"></span>
-	</p>
-	<ul id="shopping-cart-actions">
-		<li>
-			<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
-		</li>
-		<li>
-			<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
-		</li>
-		<li>
-			<a href="index.html" class="btn">Continue Shopping</a>
-		</li>
-		<li>
-			<a href="checkout.html" class="btn">Go To Checkout</a>
-		</li>
-	</ul>
+	<div class="cart">
+		<h2 class="centered">Warenkorb</h2>
+		<form id="shopping-cart" action="cart.html" method="post">
+		<table class="shopping-cart">
+			<thead>
+				<tr>
+					<th class="cartBooks">Bücher</th>
+					<th>Anzahl</th>
+					<th>Preis</th>
+				</tr>
+					<td></td>
+			</thead>
+			<tbody></tbody>
+		</table>
+		<p id="cartPrice">
+			<strong>Versandkosten:</strong> <br>
+			<strong>Gesamtkosten:</strong>
+		</p>
+	</div>
 </form>
-	
 </body>
 
 </html>

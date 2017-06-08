@@ -5,7 +5,7 @@
 	<title>Buchhandel</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="theme.css">
-	<!--<script src="myCode.js"></script>-->
+	<script src="myCode.js"></script>
 </head>
 
 <body>
@@ -21,11 +21,12 @@
 		*		name, url(bild url), price, author, oderID, stock
 		*/
 		include 'bookDB.php';
+		include ('warenkorb.html');
 	?>
 
 <!--content: befindet sich innerhalb des blauen Rechtecks-->
 <div class="content">
-	<h1 class="header">
+	<h1>
 		Unser Angebot:
 	</h1>
 	<!--Jede Kategorie hat eine eigene Tabelle zum leichten "springen"
@@ -43,11 +44,11 @@
 					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers"></td>
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
-							'.$books[$i]['price'].'&euro;<br>
+							Preis: '.$books[$i]['price'].'&euro;<br>
 							noch &uuml;brig: '.$books[$i]['stock'].'<br>
-							<a href="detail.php?id='.$i.'"details></a></p></td>
-							<td> <input name="amount'.$i.'" type="number"><br>
-							<input name="submit'.$i.'" type="submit" value="In den Warenkorb"></td></tr>';
+							<a href="detail.php?id='.$i.'">details</a></p></td>
+							<td> <input type="number" id="amount'.$i.'" min="0" max="'.$books[$i]['stock'].'">
+							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].')"></td></tr>';
 				}
 			?>
 		</tbody>
@@ -66,11 +67,11 @@
 					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers"></td>
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
-							'.$books[$i]['price'].'&euro;<br>
+							Preis: '.$books[$i]['price'].'&euro;<br>
 							noch &uuml;brig: '.$books[$i]['stock'].'<br>
-							<a href="detail.php?id='.$i.'"details></a></p></td>
-							<td> <input name="amount'.$i.'" type="number"><br>
-							<input name="submit'.$i.'" type="submit" value="In den Warenkorb"></td></tr>';
+							<a href="detail.php?id='.$i.'">details</a></p></td>
+							<td> <input type="number" id="amount'.$i.'" min="0" max="'.$books[$i]['stock'].'">
+							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].')"></td></tr>';
 				}
 			?>
 		</tbody>
@@ -89,11 +90,11 @@
 					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers"></td>
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
-							'.$books[$i]['price'].'&euro;<br>
+							Preis: '.$books[$i]['price'].'&euro;<br>
 							noch &uuml;brig: '.$books[$i]['stock'].'<br>
-							<a href="detail.php?id='.$i.'"details></a></p></td>
-							<td> <input name="amount'.$i.'" type="number"><br>
-							<input name="submit'.$i.'" type="submit" value="In den Warenkorb"></td></tr>';
+							<a href="detail.php?id='.$i.'">details</a></p></td>
+							<td> <input type="number" id="amount'.$i.'" min="0" max="'.$books[$i]['stock'].'">
+							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].')"></td></tr>';
 				}
 			?>
 		</tbody>
