@@ -73,6 +73,22 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.mainheader{
+font-size: 40;
+}
+
+.mainContent{
+font-size: 25;
+	
+}
+.mainImage{
+	width: 600;
+	height: auto;
+	margin: 2%;
+	vertical-align: middle;
+	
+}
+
 .content {
 	min-width: 700;
 	color: white;

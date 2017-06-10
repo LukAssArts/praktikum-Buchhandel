@@ -14,20 +14,18 @@
 	
 	<!--content:-->
 	<div class="content">
-		<h1 class="header">
-			header h1
+		<center><img class="mainImage" src="images/image2.jpg" alt="Main Image"></center>
+
+		
+		<h1 class="mainHeader">
+			Fahrenheit 451
 		</h1>
-		<p>
-			paragraph 1 <br>
-			some text....
+		<center>
+		<p class="mainContent">
+			Herzlich Willkommen<br>
+			Viel Spaß beim Stöbern auf unseren Seiten
 		</p>
-		<h2 class="header">
-			header h2
-		</h2>
-		<p>
-			paragraph 2 <br>
-			some text....
-		</p>
+		</center>
 	</div>
 </body>
 </html>
