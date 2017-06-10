@@ -38,11 +38,26 @@ function test_input($data) {
   return $data;
 }
 
+function saveToFile(){
+
+	echo 'test';
+	$file1 = fopen("contacts.txt", "a");
+	$s = "";
+
+	foreach($_POST as $name => $value){
+		$s = $s.$name.": ".$value."\n";
+	}
+	$s = $s."-------------------------------\n";
+
+	fwrite($file1, $s);
+	fclose($file1);
+}
+
 ?>
 
 <p><span>* Benötigte Angaben</span></p>
 
-<form method="post" action="contactCheckout.php">  
+<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">  
 <table>
 <tr>
 	<td>Name:</td>
@@ -62,7 +77,7 @@ function test_input($data) {
 
 </table>   
 
-<input type="submit" name="submit" value="Senden">  
+<input type="submit" name="submit" value="Senden" onclick="saveToFile()">  
 </form>
 </body>
 

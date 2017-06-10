@@ -70,7 +70,7 @@ function post(form){
 	var hf = document.createElement("input");
 	hf.setAttribute("type", "hidden");
 	hf.setAttribute("name", "price");
-	hf.setAttribute("value", totalPriceInCents/100);
+	hf.setAttribute("value", totalPriceInCents);
 	form.appendChild(hf);
 
 	//document.body.appendChild(form);
