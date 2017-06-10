@@ -1,6 +1,9 @@
 body {
 	background-color: #eeeeee;
 }
+.link {
+	color: #00f
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -92,12 +95,6 @@ li.dropdown {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.submit-button{
-	background: url('images/warenkorb.png')
-	background-repeat: no-repeat;
-	padding-left: 16px;
-	height: 16px;
-}
 .cart {
 	right: 1%;
 	top:10%;
@@ -107,11 +104,20 @@ li.dropdown {
 	box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.2);
 	background: #114;
 	position: fixed;
+	visibility: hidden;
 	
+}
+.clearCart {
+	float: right;
 }
 .centered {
 	text-align: center;
 }
 .cartBooks {
+	text-align: left;
 	width: 200;
+}
+.cartTH {
+	width: 100;
+	text-align: left;
 }

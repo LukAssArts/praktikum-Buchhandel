@@ -46,9 +46,10 @@
 							von: '.$books[$i]['author'].'<br>
 							Preis: '.$books[$i]['price'].'&euro;<br>
 							noch &uuml;brig: '.$books[$i]['stock'].'<br>
-							<a href="detail.php?id='.$i.'">details</a></p></td>
+							<a class="link" href="detail.php?id='.$i.'">details</a></p></td>
 							<td> <input type="number" id="amount'.$i.'" min="0" max="'.$books[$i]['stock'].'">
-							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].')"></td></tr>';
+							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" 
+							onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].', \''.$books[$i]['name'].'\')"></td></tr>';
 				}
 			?>
 		</tbody>
@@ -69,9 +70,9 @@
 							von: '.$books[$i]['author'].'<br>
 							Preis: '.$books[$i]['price'].'&euro;<br>
 							noch &uuml;brig: '.$books[$i]['stock'].'<br>
-							<a href="detail.php?id='.$i.'">details</a></p></td>
+							<a class="link" href="detail.php?id='.$i.'">details</a></p></td>
 							<td> <input type="number" id="amount'.$i.'" min="0" max="'.$books[$i]['stock'].'">
-							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].')"></td></tr>';
+							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].', \''.$books[$i]['name'].'\')"></td></tr>';
 				}
 			?>
 		</tbody>
@@ -92,9 +93,9 @@
 							von: '.$books[$i]['author'].'<br>
 							Preis: '.$books[$i]['price'].'&euro;<br>
 							noch &uuml;brig: '.$books[$i]['stock'].'<br>
-							<a href="detail.php?id='.$i.'">details</a></p></td>
+							<a class="link" href="detail.php?id='.$i.'">details</a></p></td>
 							<td> <input type="number" id="amount'.$i.'" min="0" max="'.$books[$i]['stock'].'">
-							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].')"></td></tr>';
+							<input name="submit'.$i.'" type="submit" value="in den Warenkorb" onclick="addToCart('.$i.', '.$books[$i]['price'].', '.$books[$i]['stock'].', \''.$books[$i]['name'].'\')"></td></tr>';
 				}
 			?>
 		</tbody>

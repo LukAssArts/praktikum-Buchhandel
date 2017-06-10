@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nameErr = "Name wird benötigt";
   } else {
     $name = test_input($_POST["name"]);
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $nameErr = "Nur Buchstaben und Leertaste!"; 
+    if (!preg_match("/^[a-zöüäA-ZÖÜÄ\s]+$/",$name)) {
+      $nameErr = "Bitte einen gültigen Namen angeben!"; 
     }
   }
   

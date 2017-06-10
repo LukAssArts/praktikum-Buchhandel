@@ -21,7 +21,31 @@ document.getElementById("cartPrice").innerHTML = "<strong>Versandkosten: 0€</s
 }
 
 function checkout(){
-	//test
+	if(bookCounter == 0){
+		return;
+	}
+	var match = true;
+	var namePattern=/^[a-zöüäA-ZÖÜÄ\s]+$/;
+	if(!namePattern.test(document.getElementById("firstname").value)){
+		match=false;
+	}
+	if(!namePattern.test(document.getElementById("lastname").value)){
+		match=false;
+	}
+	var adressPattern=/^[a-zA-ZäöüÄÖÜ \.]+[0-9]+[a-z]$/;
+	if(!adressPattern.test(document.getElementById("adress").value)){
+		match=false;
+	}
+	var emailPattern=/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+	if(!emailPattern.test(document.getElementById("email").value)){
+		match=false;
+	}
+	if(match){
+		//TODO: send formular to server
+		alert("valid");
+	} else {
+		alert("Bitte alle Felder gültig ausfüllen!");
+	}
 }
 
 function addToCart($id, $price, $stock, $book){
