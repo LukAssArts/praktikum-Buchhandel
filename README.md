@@ -2,10 +2,8 @@
 
 #TODO's:
 - Javascript:
-  -Warenkorb und Preisberechnen
-  -Warenkorb erst mit Inhalt anzeigen
-  -Eingaben validieren
+  -Daten an Server senden
   
 - PHP:
-  -Bestellfunktion/Kontaktfunktion 
   -Daten auf Server speichern
+  -bookDB aktualisieren
