@@ -1,59 +1,45 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<div class="cart" id="cart">
+	<h2 class="centered">Warenkorb</h2>
+	<table class="shopping-cart">
+		<thead>
+			<tr>
+				<th class="cartBooks">Bücher</th>
+				<th class="cartTH">Anzahl</th>
+				<th class="cartTH">Preis</th>
+			</tr>
+		</thead>
+		<tbody id="cartBody">
 
-<head>
-	<title>Buchhandel</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="theme.css">
-	<script src="myCode.js"></script>
-</head>
-<html>
-<body>
-	<div class="cart" id="cart">
-		<h2 class="centered">Warenkorb</h2>
-		<table class="shopping-cart">
-			<thead>
+		</tbody>
+	</table>
+	<p id="cartPrice">
+		<strong>Versandkosten:</strong> <br>
+		<strong>Gesamtkosten:</strong>
+	</p>
+		<form method="post" action="checkout.php">
+			<table>
 				<tr>
-					<th class="cartBooks">Bücher</th>
-					<th class="cartTH">Anzahl</th>
-					<th class="cartTH">Preis</th>
+					<td>Vorname:</td>
+					<td><input type="text" id="firstname" name="firstname"> *<br></td>
 				</tr>
-			</thead>
-			<tbody id="cartBody">
-
-			</tbody>
-		</table>
-		<p id="cartPrice">
-			<strong>Versandkosten:</strong> <br>
-			<strong>Gesamtkosten:</strong>
-		</p>
-			<form method="post" action="checkout.php">
-				<table>
-					<tr>
-						<td>Vorname:</td>
-						<td><input type="text" id="firstname" name="firstname"> *<br></td>
-					</tr>
-					<tr>
-						<td>Nachname:</td>
-						<td><input type="text" id="lastname" name="lastname"> *<br></td>
-					</tr>
-					<tr>
-						<td>Adresse:</td>
-						<td><input type="text" id="adress" name="adress"> *<br></td>
-					</tr>
-					<tr>
-						<td>E-Mail:</td>
-						<td><input type="text" id="email" name="email"> *<br></td>
-					</tr>
-					<tr>
-						<td>* ben&ouml;tigte Angaben</td><td></td>
-					</tr>
-				</table>
-				<br>
-				<input type="button" value="jetzt bestellen" onclick="checkout(this.form)">	
-				<input type="button" value="Warenkorb leeren" onclick="resetCart()" class="clearCart">
-			</form>
-	</div>
-</body>
-
-</html>
+				<tr>
+					<td>Nachname:</td>
+					<td><input type="text" id="lastname" name="lastname"> *<br></td>
+				</tr>
+				<tr>
+					<td>Adresse:</td>
+					<td><input type="text" id="adress" name="adress"> *<br></td>
+				</tr>
+				<tr>
+					<td>E-Mail:</td>
+					<td><input type="text" id="email" name="email"> *<br></td>
+				</tr>
+				<tr>
+					<td>* ben&ouml;tigte Angaben</td><td></td>
+				</tr>
+			</table>
+			<br>
+			<input type="button" value="jetzt bestellen" onclick="checkout(this.form)">	
+			<input type="button" value="Warenkorb leeren" onclick="resetCart()" class="clearCart">
+		</form>
+</div>
