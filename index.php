@@ -20,7 +20,7 @@
 			Fahrenheit 451
 		</h1>
 		
-		<p class="centered">
+		<p class="mainContent">
 			Herzlich Willkommen<br>
 			Viel Spaß beim Stöbern auf unseren Seiten
 		</p>
