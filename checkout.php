@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Fahrenheit 451</title>
@@ -7,7 +7,7 @@
 
 <body>
 <?php
-	//include 'header.php';
+	include 'header.php';
 	include 'bookDB.php';
 	
 	$s = "";
@@ -38,9 +38,9 @@
 		<h1>
 			Danke f&uuml;r Ihre Bestellung!
 		</h1>
-		<p>
-			<br><center>Besuchen Sie uns bald wieder und empfehlen Sie uns weiter! <br>
-			<a href="books.php" class="link"> weiterst&ouml;bern </a></center>
+		<p class="centered">
+			<br>Besuchen Sie uns bald wieder und empfehlen Sie uns weiter! <br>
+			<a href="books.php" class="link"> weiterst&ouml;bern </a>
 		</p>
 	</div>
 </body>
