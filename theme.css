@@ -84,8 +84,8 @@ font-size: 40;
 .mainImage{
 	width: 600;
 	height: auto;
+	display: block;
 	margin: auto;
-	vertical-align: middle;
 }
 
 .content {
