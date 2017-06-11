@@ -91,10 +91,8 @@ font-size: 40;
 }
 
 .content {
-	float:left;
 	min-width: 700;
-	min-height: 90%;
-	
+
 	margin-top: 60px;
 	margin-left: 20%;
 	margin-right: 20%;
@@ -105,8 +103,6 @@ font-size: 40;
 	color: white;
 	background-color: #44d;
 	box-shadow: -4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 8px 8px 4px rgba(0, 0, 0, 0.2);
-    	display:inline-block;
-    	vertical-align:top;
 }
 .contactContent {
 	margin-left: 10px;
