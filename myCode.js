@@ -1,11 +1,12 @@
-var bookCounter = 0;
-var differentBooks = 0;
-var totalPriceInCents = 0;
-var shippingInCents = 0;
-var books = [];
-var ids = [];
-var totalAmount = [];
-var priceInCents = [];
+var bookCounter = 0;		//Anzahl aller Bücher im Warenkorb
+var differentBooks = 0;		//Anzahl verschiedener Bücher im WK
+var totalPriceInCents = 0;	//Gesamtpreis der Bücher
+var shippingInCents = 0;	//Versandkosten
+//'differentBooks' wird als Index der Arrays benutzt
+var books = [];		//enthält buchnamen
+var ids = [];		//enthält buchids
+var totalAmount = [];	//gesamtanzahl jedes Buchs
+var priceInCents = [];	//Gesamtpreis jedes Buches
 
 function resetCart() {
 	bookCounter = 0;
@@ -21,9 +22,10 @@ document.getElementById("cartPrice").innerHTML = "<strong>Versandkosten: 0€</s
 }
 
 function checkout(form){
-	if(bookCounter == 0){
+	if(bookCounter == 0){	//keine Bücher im WK
 		return;
 	}
+	//Teste Eingaben auf gültigkeit:
 	var match = true;
 	var fn = document.getElementById("firstname").value;
 	var ln = document.getElementById("lastname").value;
@@ -47,6 +49,7 @@ function checkout(form){
 		match=false;
 	}
 	if(match){
+		//Alle Eingaben gültig -> post
 		post(form);
 	} else {
 		alert("Bitte alle Felder gültig ausfüllen!");
@@ -54,6 +57,7 @@ function checkout(form){
 }
 
 function post(form){
+	//Füge dem Formular des Warenkorbs verstecke Elemente mit den IDs, der Anzahl und den Preisen der Bücher hinzu
 	for(i = 0; i < ids.length; i++){
 		var hf = document.createElement("input");
 		hf.setAttribute("type", "hidden");
@@ -73,19 +77,20 @@ function post(form){
 	hf.setAttribute("value", totalPriceInCents/100);
 	form.appendChild(hf);
 
-	//document.body.appendChild(form);
+	//submitte das Formular
 	form.submit();
 }
 
 function addToCart(id, price, stock, book){
-	var amount = Number(document.getElementById("amount" + id).value);
+	var amount = Number(document.getElementById("amount" + id).value);	//Anzahl der hinzugefügten Bücher
 	if(amount <= 0){
-		return;
+		return;	//ungültige Anzahl:
 	}
-	if(amount > stock){
+	if(amount > stock){ //Zu hohe Anzahl:
 		alert("Von diesem Buch sind leider nur noch " + stock + " Exemplare verfügbar");
 	} else {	
 		//ab hier valide Anzahl:
+		//Zeige den Warenkorb an:
 		document.getElementById('cart').style.visibility = 'visible';
 		var bookalreadyinCart = 0;
 		for (i = 0; i < ids.length; i++) {
@@ -94,27 +99,31 @@ function addToCart(id, price, stock, book){
 				if(totalAmount[i] + amount > stock){	//falls Anzahl > stock
 					alert("Von diesem Buch sind leider nur noch " + stock + " Exemplare verfügbar");
 					return;
-				} else {
+				} else {	//ansonsten füge die Anzahl der Gesamtzahl hinzu
 					totalAmount[i] += amount;
 				}
+				//berechne neuen Preis:
 				priceInCents[i] += (price*100) * amount;
 			}
 		}
+		//Nimm neues Buch in den Warenkorb auf:
 		if (bookalreadyinCart == 0) {
 			ids[differentBooks] = id;
 			books[differentBooks] = book;
 			totalAmount[differentBooks] = amount;
 			priceInCents[differentBooks] = (price*100) * amount;
 			differentBooks++;
-		
 		}
-		bookCounter += Number(amount);
+		bookCounter += amount;
+		//berechne den neuen Gesamtpreis aller Bücher:
 		totalPriceInCents += (price*100) * amount;
+		//Berechnung der Versandkosten:
 		if (totalPriceInCents >= 2000) {
 			shippingInCents = 0;
 		} else {
 			shippingInCents = 200 + (bookCounter - 1) * 50;
 		}
+		//Setze den Html-Text des Warenkorbs auf die aktuellen Werte:
 		var innerHtml = "";
 		for (i = 0; i < ids.length; i++){
 			innerHtml += "<tr><td>" + books[i] + "</td><td>" + totalAmount[i] + "</td><td>" + priceInCents[i]/100 + "€</td>";
