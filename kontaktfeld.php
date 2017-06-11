@@ -54,7 +54,7 @@ function test_input($data) {
 </tr>
 <tr>
 	<td>Nachricht:</td>
-	<td><textarea type="text" name="nachricht" rows="5" cols="40" value="<?php echo $nachricht;?>"></textarea></td>
+	<td><input type="text" name="nachricht" rows="5" cols="40" value="<?php echo $nachricht;?>"></td>
 	<td><span>* <?php echo $nachrichtErr;?></span></td>
 </tr>
 
