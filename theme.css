@@ -126,6 +126,9 @@ font-size: 40;
 	visibility: hidden;
 	
 }
+.cartContent {
+	margin: 10px;	
+}
 .clearCart {
 	float: right;
 }
