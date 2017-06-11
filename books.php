@@ -30,7 +30,7 @@
 		Unser Angebot:
 	</h1>
 	<!--Jede Kategorie hat eine eigene Tabelle zum leichten "springen"
-		Alle Eingabefelder für die Anzahl der Bücher heißen "amount0" bis "amount8"-->
+	Alle Eingabefelder für die Anzahl der Bücher heißen "amount0" bis "amount8"-->
 	<!--Krimis:-->
 	<table>
 		<thead>	
