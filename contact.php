@@ -10,12 +10,10 @@
 		include 'header.php';
 	?>
 	<div class="content">
-		<div class="contactContent">
-			<h1>Kontaktformular</h1>
-			<?php
-				include 'kontaktfeld.php';
-			?>
-		</div>
+		<h1>Kontaktformular</h1>
+		<?php
+			include 'kontaktfeld.php';
+		?>
 	</div>
 </body>
 </html>
