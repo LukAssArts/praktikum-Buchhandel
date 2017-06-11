@@ -36,7 +36,7 @@
 		<thead>	
 			<tr>
 				<th>
-					<a id="krimis"><h2 alt="bookCover" class="header">Krimis:</h2></a>
+					<a id="krimis"><h2 class="header">Krimis:</h2></a>
 				</th>
 				<th></th>
 				<th></th>
@@ -45,7 +45,7 @@
 		<tbody>
 			<?php
 				for($i = 0; $i < 3; $i++){
-					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers"></td>
+					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers" alt="bookCover"></td>
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
 							Preis: '.$books[$i]['price'].'&euro;<br>
@@ -64,7 +64,7 @@
 		<thead>
 			<tr>
 				<th>
-					<a id="romane"><h2 alt="bookCover" class="header">Romane:</h2></a>
+					<a id="romane"><h2 class="header">Romane:</h2></a>
 				</th>
 				<th></th>
 				<th></th>
@@ -73,7 +73,7 @@
 		<tbody>
 			<?php
 				for($i = 3; $i < 6; $i++){
-					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers"></td>
+					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers" alt="bookCover"></td>
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
 							Preis: '.$books[$i]['price'].'&euro;<br>
@@ -91,7 +91,7 @@
 		<thead>
 			<tr>
 				<th>
-					<a id="fantasy"><h2 alt="bookCover" class="header">Fantasy:</h2></a>
+					<a id="fantasy"><h2 class="header">Fantasy:</h2></a>
 				</th>
 				<th></th>
 				<th></th>
@@ -100,7 +100,7 @@
 		<tbody>
 			<?php
 				for($i = 6; $i < 9; $i++){
-					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers"></td>
+					echo '<tr> <td> <img src="'.$books[$i]['url'].'" class="bookCovers" alt="bookCover"></td>
 							<td> <p>'.$books[$i]['name'].'<br>
 							von: '.$books[$i]['author'].'<br>
 							Preis: '.$books[$i]['price'].'&euro;<br>
