@@ -1,21 +1,22 @@
 <div class="cart" id="cart">
-	<h2 class="centered">Warenkorb</h2>
-	<table class="shopping-cart">
-		<thead>
-			<tr>
-				<th class="cartBooks">Bücher</th>
-				<th class="cartTH">Anzahl</th>
-				<th class="cartTH">Preis</th>
-			</tr>
-		</thead>
-		<tbody id="cartBody">
+	<div class="cartContent">
+		<h2 class="centered">Warenkorb</h2>
+		<table class="shopping-cart">
+			<thead>
+				<tr>
+					<th class="cartBooks">Bücher</th>
+					<th class="cartTH">Anzahl</th>
+					<th class="cartTH">Preis</th>
+				</tr>
+			</thead>
+			<tbody id="cartBody">
 
-		</tbody>
-	</table>
-	<p id="cartPrice">
-		<strong>Versandkosten:</strong> <br>
-		<strong>Gesamtkosten:</strong>
-	</p>
+			</tbody>
+		</table>
+		<p id="cartPrice">
+			<strong>Versandkosten:</strong> <br>
+			<strong>Gesamtkosten:</strong>
+		</p>
 		<form method="post" action="checkout.php">
 			<table>
 				<tr>
@@ -42,4 +43,5 @@
 			<input type="button" value="jetzt bestellen" onclick="checkout(this.form)">	
 			<input type="button" value="Warenkorb leeren" onclick="resetCart()" class="clearCart">
 		</form>
+	</div>
 </div>
