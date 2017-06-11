@@ -32,12 +32,12 @@ tr {
 }
 li a, .dropMenu {
 	font-size: 20;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    	display: inline-block;
+    	color: white;
+    	text-align: center;
+    	padding: 14px 16px;
 	min-width: 60px;
-    text-decoration: none;
+    	text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropMenu {
@@ -92,7 +92,7 @@ font-size: 40;
 
 .content {
 	min-width: 700;
-	min-height: 600px;
+	min-height: 800px;
 	margin-top: 60px;
 	margin-left: 20%;
 	margin-right: 20%;
