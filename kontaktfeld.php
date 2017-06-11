@@ -1,5 +1,3 @@
-<html>
-<body>
 <?php
 
 $nameErr = $emailErr = $nachrichtErr = "";
@@ -64,6 +62,3 @@ function test_input($data) {
 
 <input type="submit" name="submit" value="Senden">  
 </form>
-</body>
-
-</html>
