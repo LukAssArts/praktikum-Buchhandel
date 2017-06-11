@@ -36,7 +36,7 @@
 		<thead>	
 			<tr>
 				<td>
-					<a name="krimis"><h2 class="header">Krimis:</h2></a>
+					<a id="krimis"><h2 class="header">Krimis:</h2></a>
 				</td>
 			</tr>
 		</thead>
@@ -62,7 +62,7 @@
 		<thead>
 			<tr>
 				<td>
-					<a name="romane"><h2 class="header">Romane:</h2></a>
+					<a id="romane"><h2 class="header">Romane:</h2></a>
 				</td>
 			</tr>
 		</thead>
@@ -87,7 +87,7 @@
 		<thead>
 			<tr>
 				<td>
-					<a name="fantasy"><h2 class="header">Fantasy:</h2></a>
+					<a id="fantasy"><h2 class="header">Fantasy:</h2></a>
 				</td>
 			</tr>
 		</thead>
