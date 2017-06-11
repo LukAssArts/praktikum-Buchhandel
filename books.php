@@ -35,7 +35,7 @@
 	<table>
 		<thead>	
 			<tr>
-				<th>
+				<th class="booksTH">
 					<a id="krimis">Krimis:</a>
 				</th>
 				<th></th>
@@ -63,7 +63,7 @@
 	<table>
 		<thead>
 			<tr>
-				<th>
+				<th class="booksTH">
 					<a id="romane">Romane:</a>
 				</th>
 				<th></th>
@@ -90,7 +90,7 @@
 	<table>
 		<thead>
 			<tr>
-				<th>
+				<th class="booksTH">
 					<a id="fantasy">Fantasy:</a>
 				</th>
 				<th></th>
