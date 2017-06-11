@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Buchhandel</title>
@@ -13,18 +13,18 @@
 	
 	<!--content:-->
 	<div class="content">
-		<center><img class="mainImage" src="images/image2.jpg" alt="Main Image"></center>
+		<img class="mainImage" src="images/image2.jpg" alt="Main Image">
 
 		
 		<h1 class="mainHeader">
 			Fahrenheit 451
 		</h1>
-		<center>
+		
 		<p class="mainContent">
 			Herzlich Willkommen<br>
 			Viel Spaß beim Stöbern auf unseren Seiten
 		</p>
-		</center>
+		
 	</div>
 </body>
 </html>
