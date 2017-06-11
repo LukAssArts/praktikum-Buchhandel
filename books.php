@@ -35,7 +35,9 @@
 	<table>
 		<thead>	
 			<tr>
-				<a name="krimis"><h2 class="header">Krimis:</h2></a>
+				<td>
+					<a name="krimis"><h2 class="header">Krimis:</h2></a>
+				</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -59,7 +61,9 @@
 	<table>
 		<thead>
 			<tr>
-				<a name="romane"><h2 class="header">Romane:</h2></a>
+				<td>
+					<a name="romane"><h2 class="header">Romane:</h2></a>
+				</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -82,7 +86,9 @@
 	<table>
 		<thead>
 			<tr>
-				<a name="fantasy"><h2 class="header">Fantasy:</h2></a>
+				<td>
+					<a name="fantasy"><h2 class="header">Fantasy:</h2></a>
+				</td>
 			</tr>
 		</thead>
 		<tbody>
