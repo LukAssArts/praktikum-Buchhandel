@@ -128,7 +128,10 @@ font-size: 40;
 	visibility: hidden;
 	
 }
-.cartContent .detailContent {
+.cartContent {
+	margin: 10px;	
+}
+.detailContent {
 	margin: 10px;	
 }
 .clearCart {
