@@ -1,4 +1,4 @@
-<!DOCTYPE html">
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Fahrenheit 451</title>
