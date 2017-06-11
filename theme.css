@@ -105,7 +105,6 @@ font-size: 40;
 	color: white;
 	background-color: #44d;
 	box-shadow: -4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 8px 8px 4px rgba(0, 0, 0, 0.2);
-	float:none;
     	display:inline-block;
     	vertical-align:top;
 }
