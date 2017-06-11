@@ -14,12 +14,9 @@
 	<!--content:-->
 	<div class="content">
 		<img class="mainImage" src="images/image2.jpg" alt="Main Image">
-
-		
 		<h1 class="mainHeader">
 			Fahrenheit 451
 		</h1>
-		
 		<p class="mainContent">
 			Herzlich Willkommen<br>
 			Viel Spaß beim Stöbern auf unserer Seite
