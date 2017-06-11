@@ -13,6 +13,7 @@
 	
 	<!--content:-->
 	<div class="content">
+		<div>
 		<img class="mainImage" src="images/image2.jpg" alt="Main Image">
 
 		
@@ -24,7 +25,7 @@
 			Herzlich Willkommen<br>
 			Viel Spaß beim Stöbern auf unseren Seiten
 		</p>
-		
+		</div>
 	</div>
 </body>
 </html>
