@@ -93,7 +93,7 @@ font-size: 40;
 .content {
 	min-width: 700;
 	color: white;
-	width: 60%;
+	
 	min-height: 90%;
 	box-shadow: -4px 8px 8px 4px rgba(0, 0, 0, 0.2), 4px 8px 8px 4px rgba(0, 0, 0, 0.2);
 	margin-top: 60px;
@@ -101,6 +101,9 @@ font-size: 40;
 	margin-right: 20%;
 	background-color: #44d;
 	background-repeat: repeat-y;
+	float: none;
+	width: 60%;
+	height: 90%;
 }
 .contactContent {
 	margin-left: 10px;
